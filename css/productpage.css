@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  body{
+    behavior: inherit !important;
+  }
+  .scrolldiv{
+    position:fixed;
+    left: 0; top: 0;
+    width: 0; height: 3pc;
+    background: red;
+  }
+  .show {
+    width: 2pc;
+    height: 2pc;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .pageimg{
+    height: 2pc !important;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 25px;
+    height: 80px;
+    align-items: center;
+    background-color: #007bff;
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: white;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .search input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .icons {
+    text-align: right;
+  }
+  
+  .icons .fa {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    transition: 0.6s;
+  }
+  
+  .fa:hover {
+    color: black;
+  }
+  
+  .links {
+    width: 100% !important;
+    height: 0px;
+    transition: 0.6s;
+  }
+  
+  .links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+  }
+  
+  .show {
+    height: 50vh;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .animateimg1 {
+    position: relative;
+    background-image: url(../image/items/person4-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38vh;
+    width: 20%;
+    animation-name: animateimg1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+  
+  }
+  
+  
+  @keyframes animateimg1 {
+    0% {
+      transform: rotateX(30deg) translateX(600px) skewy(40deg);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: rotateX(-30deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .animateimg {
+    position: relative;
+    background-image: url(../image/items/person4-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 20%;
+    animation-name: animateimg;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+  
+  }
+  
+  @keyframes animateimg {
+    0% {
+      transform: rotateX(30deg) translateX(-600px) skewy(30deg);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: rotateX(-30deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .animateimg1 {
+    position: relative;
+    background-image: url(../image/items/online-shopping-concept_441797-10384-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38vh;
+    width: 20%;
+  }
+  
+  .allcontainer {
+  
+    /* background-image: url(../image/items/finance-elements-frame.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 80px;
+    background-position: center;
+    height: 783vh;
+  }
+  
+  .carousel-item img {
+    height: auto;
+    width: 700px !important;
+  }
+  
+  .carouseldiv {
+    height: 380px;
+    width: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-name: carouseldiv;
+    animation-timing-function: cubic-bezier(40);
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    transition: 0.7s;
+  }
+  
+  @keyframes carouseldiv {
+  
+    4% {
+      background-image: url(https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/w17-Best-phone-electronic/Slider_best_hones_and_electronics.jpg);
+    }
+  
+    60% {
+      background-image: url(../image/items/flat-lay-tablet_35570-129.jpg);
+  
+    }
+  
+    70% {
+      background-image: url(../image/Desktop_Homepage_Slider_712x34py.jpg);
+    }
+  
+    100% {
+      background-image: url(../image/Slider.png);
+    }
+  }
+  
+  .carouseldiv1 {
+    height: 380px;
+    width: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-name: carouseldiv1;
+    animation-timing-function: cubic-bezier(40);
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    transition: 0.7s;
+  }
+  
+  @keyframes carouseldiv1 {
+  
+    4% {
+      background-image: url(../image/Slider_copy.jpg);
+    }
+  
+    60% {
+      background-image: url(../image/V2712x384_copy_5.jpg);
+  
+    }
+    
+  
+    100% {
+      background-image: url(../image/Mall_BT_712x384.jpg);
+    }
+  }
+  
+  .reduceFont {
+    font-size: 15px;
+  }
+  
+  .containerbtn {
+    animation-name: containerbtn;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+  }
+  
+  @keyframes containerbtn {
+  
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(-30px);
+      opacity: 1;
+    }
+  }
+  
+  .signbtn {
+    background-color: rgb(50, 205, 197) !important;
+    }
+  
+  .itemdTttle {
+    height: 70px;
+    margin-top: 250px;
+  }
+  
+  .itemdiv {
+    margin-top: 30px;
+    height: 127vh;
+  
+  }
+  
+  .productdiv {
+    height: 200px;
+    transition: 2s all;
+  }
+  
+  .productdiv:hover {
+    transform: scale(1.04);
+  }
+  
+  .productdiv1 {
+    height: 130px;
+    /* border-bottom-left-radius: 8px; */
+    /* border-bottom-right-radius: 8px; */
+    /* box-shadow: 0 0 10px; */
+  
+  }
+  
+  #displayALLItem {
+    margin-bottom: 10pc !important;
+    display: grid;
+    column-gap: 1pc !important;
+    row-gap: 15pc;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .sizeImag{
+    height: 11pc !important;
+  }
+  #dispUploadedImage{
+    margin-bottom: 10pc !important;
+    display: grid;
+    column-gap: 1pc !important;
+    row-gap: 15pc;
+    grid-template-columns: repeat(6, 1fr); 
+  }
+  #displayAllWomanItem {
+    margin-bottom: 10pc !important;
+    display: grid;
+    column-gap: 1pc !important;
+    row-gap: 15pc;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  #displayForElectronics {
+    margin-bottom: 10pc !important;
+    display: grid;
+    column-gap: 1pc !important;
+    row-gap: 15pc;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  #displayForSohe {
+    margin-bottom: 10pc !important;
+    display: grid;
+    column-gap: 1pc !important;
+    row-gap: 15pc;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .electronicitemdiv {
+  
+    overflow-y: scroll !important;
+    width: 100%;
+    height: 590% !important;
+    margin-top: 2pc;
+  }
+  .shoeitemdiv{
+    height: 1900% !important;
+  }
+  
+  .electronicitemdiv::-webkit-scrollbar {
+    display: block !important;
+    background-color: orangered;
+  }
+  
+  .progress {
+    height: 7px !important;
+  
+  }
+  
+  .displaylastimage {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .lastimage {
+    /* box-shadow: 0 0 20px; */
+    width: 100%;
+    height: 50vh;
+  }
+  
+  .gridimage {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .information {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .fixedissue {
+    height: 78vh;
+   
+  }
+  
+  .detailsstore {
+    margin-top: 5pc;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .reduceFont{
+    font-size: 13px !important;
+  }
+  .bottonnav{
+    height: 9vh !important;
+    position: fixed;
+    bottom: 0px;
+  }
+  
+  @media (max-width:600px) {
+    .header {
+      grid-template-columns: auto auto;
+      padding: 10px 7px;
+      height: auto;
+    }
+    .pageimg{
+      height: 2pc !important;
+      width: 2pc !important;
+    }
+    .logo img {
+      height: auto;
+      width: 70px;
+    }
+  
+    .allcontainer {
+  
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      background-position: center;
+      height: 1490vh;
+    }
+  
+    .search {
+      grid-column: 2;
+      grid-row: 2;
+      grid-column: 1/span 2;
+      padding-top: 10px;
+    }
+  
+    .icons .fa {
+      padding: 5px;
+    }
+  
+    .carouseldiv {
+      background-image: url(../image/Slider.png);
+      margin-top: 20px;
+      height: 40vh;
+  
+    }
+  
+    #displayALLItem {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    #displayAllWomanItem {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #dispUploadedImage{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    #displayForElectronics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    #displayForSohe {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .electronicitemdiv::-webkit-scrollbar {
+      display: block !important;
+    }
+    .shoeitemdiv{
+      height: 5550% !important;
+    }
+  
+    .animateimg1 {
+      width: 80%;
+  
+    }
+  
+    .animateimg {
+      display: none;
+    }
+  
+    .itemdiv {
+      margin-top: 30px;
+      height: 207vh !important;
+  
+    }
+  
+    .displaylastimage {
+      /* width: 10%; */
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+  .fixedissue {
+    height: 200vh;
+   
+  }
+  .diplayrid{
+    display: flex;
+    justify-content: space-between !important;
+    word-spacing: 20%;
+  }
+  
+  
+    .information {
+      height: 70vh;
+      display: grid;
+      row-gap: 1px !important;
+      column-gap: 1px !important;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .detailsstore {
+      padding-left: 2pc;
+      margin-top: 1px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  
+  
+  
+  

@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../image/items/realistic-3d-sale-background_23-2148957710.avif);
+    background-repeat: no-repeat;
+    background-size: 80pc;
+}
+.maincontainer{
+
+    /* background-image: linear-gradient(to bottom,rgba(0, 255, 229, 0.897),rgb(0, 255, 247)); */
+    height: 37pc;
+    backdrop-filter: blur(900px);
+    opacity: 0.8;
+}
+.innerdiv{
+    margin-top: 2pc;
+}
+input{
+    border: 1px solid !important;
+    background-color:rgba(233, 224, 209, 0.2) !important;
+    border-radius: 10pc  !important;
+}
+.signupbtn{
+    background-image: linear-gradient(to bottom,rgba(0, 145, 255, 0.897),rgb(0, 255, 242));
+    width: 10pc !important;
+    font-weight: 700;
+    box-shadow: 0 0 10px;
+    border-radius: 10pc !important;
+    
+}
+p{
+    font-family: monospace;
+    font-size: 13px;
+}
+.linkhover :hover{
+    color: rgb(0, 255, 76) !important;
+}
+.twobtnforsignin{
+    color:(to bottom,rgba(0, 255, 145, 0.897),rgb(0, 234, 255));
+    box-shadow:  0 0 2px;
+    border: none;
+    height: 54px;
+    font-size: 13px;
+}
+.twobtnforsignin:hover{
+    box-shadow: 0 0 7px;
+}
+#disp ,#Emaildisp, #Passworddisp ,#confirmPassworddisp,#dispLastname{
+    font-size: 12px  !important;
+}
+@media (max-width:688px) {
+    body{
+      
+        background-image: url(../image/items/realistic-3d-sale-background_23-2148957710.av);
+        background-repeat: no-repeat;
+        background-size: 80pc;
+    }  
+    .maincontainer{
+        margin-top: -2pc !important;
+        background-color: white;
+        height: 110vh;
+    }
+    .innerdiv{
+        margin-top: 12pc;
+    }
+    .signupbtn{
+        background-image: linear-gradient(to bottom,rgba(207, 213, 217, 0.897),rgb(0, 255, 242));
+        width: 10pc !important;
+        font-weight: 700;
+        box-shadow: 0 0 10px;
+        border-radius: 10pc !important;
+        
+    }
+    /* .increasefont{
+        font-size: 16px !important;
+    } */
+}

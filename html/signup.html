@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto shadow maincontainer col-12 col-md-4 mt-3 rounded">
+                <div class="innerdiv mx-4">
+                    <h3 class="text-center"> DOC buy <i class="bi bi-minecart-loaded"></i></h3>
+                    <h4 class="text-center">Sign up </h4>
+                    <input class="form-control mt-3" type="text" placeholder="First-name" id="FirstName">
+                    <div id="disp"></div>
+                    <input class="form-control mt-3" type="text" placeholder="Last-name" id="LastName">
+                    <div id="dispLastname"></div>
+                    <input class="form-control mt-3" type="email" placeholder="Email" id="userEmail">
+                    <div id="Emaildisp"></div>
+                    <input class="form-control mt-3" type="password" placeholder="Password" id="userPassword">
+                    <div id="Passworddisp"></div>
+                    <input class="form-control shadow mt-3" type="password" placeholder="Confirm password"
+                        id="confirmUserPassword">
+                    <div id="confirmPassworddisp"></div>
+                    <button class="form-control signupbtn mt-3 mx-auto" onclick="signUp()">SIGN UP</button> <br>
+                    <p class="text-center">Already have an account?<a href="./signin.html">SIGN IN</a></p>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn  twobtnforsignin  text-center ms-1 fw-bold" id="signIn"><i
+                                class="text-dark fs-6 bi bi-google "></i>Sign in with Google</button>
+                        <button class="btn  twobtnforsignin  ms-1 text-center ms-1 fw-bold"><i
+                                class="text-dark fs-6 bi bi-envelope"></i>Sign in with email</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let allUser = localStorage.localStore ? JSON.parse(localStorage.localStore) : []
+        const signUp = () => {
+            userInformation = {
+                first_name: FirstName.value,
+                last_name: LastName.value,
+                email: userEmail.value,
+                password: userPassword.value,
+                confirmPassword: confirmUserPassword.value
+            }
+
+            let regexForPhone = /^\w+([.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            if (!FirstName.value || !LastName.value || !userEmail.value || !userPassword.value || !confirmUserPassword.value) {
+                FirstName.className = "form-control  border border-danger is-invalid"
+                LastName.className = "form-control  border border-danger is-invalid"
+                userEmail.className = "form-control border border-danger is-invalid"
+                userPassword.className = "form-control border border-danger is-invalid"
+                confirmUserPassword.className = "form-control border border-danger  is-invalid"
+                disp.innerHTML = "<div class='text-danger'>This fields are required</div>"
+                dispLastname.innerHTML = "<div class='text-danger'>This fields are required</div>"
+                Emaildisp.innerHTML = "<div class='text-danger'>This fields are required</div>"
+                Passworddisp.innerHTML = "<div class='text-danger'>This fields are required</div>"
+                confirmPassworddisp.innerHTML = "<div class='text-danger'>This fields are required</div>"
+            }
+
+            else if (!regexForPhone.test(userEmail.value)) {
+                Emaildisp.innerHTML = "<div class='text-danger'>enter a valid email address"
+                userEmail.className = "border border-danger mt-3 form-control is-invalid"
+            }
+
+
+            else if (userPassword.value !== confirmUserPassword.value) {
+                alert("wroung email or password")
+            }
+
+            else {
+                FirstName.className = "form-control  border border-success is-valid"
+                LastName.className = "form-control  border border-success is-valid"
+                userEmail.className = "form-control border border-success is-valid"
+                userPassword.className = "form-control border border-success is-valid"
+                confirmUserPassword.className = "form-control border border-success is-valid"
+                disp.innerHTML = "<div class='mb-3'><div>"
+                Emaildisp.innerHTML = "<div class='mb-3'><div>"
+                Passworddisp.innerHTML = "<div class='mb-3'><div>"
+                confirmPassworddisp.innerHTML = "<div class='mb-3'><div>"
+                FirstName.value = ""
+                LastName.value = ""
+                userEmail.value = ""
+                userPassword.value = ""
+                confirmUserPassword.value = ""
+                allUser.push(userInformation)
+                localStorage.setItem("localStore", JSON.stringify(allUser))
+                console.log(allUser)
+                window.location.href = "signin.html"
+
+
+            }
+        }
+        document.getElementById("signIn").addEventListener("click", () => {
+            alert("itzz working")
+        })
+
+    </script>
+    <script src="../js/cartdisplay.js"></script>
+</body>
+
+</html>

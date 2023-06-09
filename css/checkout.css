@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo{
+    font-family: monospace;
+ padding: 10px 3px;  
+}
+.deliveryheight{
+    margin-top: 2pc;
+    height: 48vh;
+}
+.deliveryinform{
+   height: 59vh;
+   top: 2pc;
+   position: relative;
+}
+textarea{
+  height: 15vh;
+}
+.otherinform{
+  margin-left: 27px;
+  height: 15pc;
+}
+.otherDelivery{
+  margin-left: 27px;
+  height: 2pc;
+  color: rgb(214, 212, 212);
+  font-weight: 700;
+  font-size: 15px;
+}
+.btn:hover{
+  background-color: orange;
+}
+.information {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fixedissue {
+  height: 98vh;
+}
+.pageimg{
+  height: 2pc !important;
+}
+.detailsstore {
+  margin-top: 5pc;
+  font-family: monospace;
+  display: flex;
+  justify-content: space-evenly;
+}
+.reduceFont{
+  font-size: 13px !important;
+}
+i:hover {
+  color: rgb(0, 132, 255);
+}
+.authbtn:hover{
+  color: rgb(0, 132, 255) !important;
+  border: 2px solid  rgb(0, 132, 255) !important;
+}
+textarea{
+  width: 44pc;
+  height: 49px;
+  resize: none;
+  padding: 23px;
+  scrollbar-width: none;
+}
+textarea::-webkit-scrollbar{
+  display: none;
+}
+.bottonnav{
+  height: 9vh !important;
+  position: fixed;
+  bottom: 0px;
+  font-weight: 400;
+}
+@media (max-width:600px) {
+  .deliveryheight{
+    margin-top: 2pc;
+    height: 55vh;
+}
+  .otherinform{
+    margin-left: 0px;
+    height: 20pc;
+    position: relative;
+    bottom: 26pc;
+  }
+  .deliveryinform{
+    height: 70vh;
+    top: 32pc;
+    position: relative;
+ }
+ .otherDelivery{
+  margin-left: 0px;
+  height: 2pc;
+
+}
+.setelement{
+  position: relative;
+  bottom: 25pc !important ;
+}
+.fixedissue {
+  height: 270vh;
+ 
+}
+.diplayrid{
+  display: flex;
+  justify-content: space-between !important;
+  word-spacing: 20%;
+}
+
+
+  .information {
+    height: 70vh;
+    display: grid;
+    row-gap: 1px !important;
+    column-gap: 1px !important;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pageimg{
+    height: 2pc !important;
+    width: 2pc !important;
+  }
+
+  .detailsstore {
+    padding-left: 2pc;
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

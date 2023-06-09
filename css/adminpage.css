@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .pageimg{
+    height: 2pc !important;
+  }
+  .adminsign{
+   margin-top: 5pc !important;
+   height: 94vh;
+  }
+  
+  .adminsignimg{
+    margin-top: 7pc !important;
+    display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+  }
+  .adminimg{
+  
+          
+    animation-name: fade-in-top;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+      
+  }
+  
+  .scrolldiv{
+    position:fixed;
+    left: 0; top: 0;
+    width: 0; height: 3pc;
+    
+  }
+  .show {
+    width: 2pc;
+    height: 2pc;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .pageimg{
+    height: 2pc !important;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 25px;
+    height: 80px;
+    align-items: center;
+    background-color: #007bff;
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: white;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .search input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .icons {
+    text-align: right;
+  }
+  
+  .icons .fa {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    transition: 0.6s;
+  }
+  .bottonnav{
+    height: 9vh !important;
+    position: fixed;
+    bottom: 0px;
+  }
+  
+  
+  .fa:hover {
+    color: black;
+  }
+  
+  .links {
+    width: 26pc !important;
+    height: 0px;
+    transition: 0.6s;
+  }
+  
+  .links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+  }
+  
+  .show {
+    height: 50vh;
+  }
+  #alertError,#alertErr{
+    height: pc !important;
+    text-align: center;
+    align-items: center;
+    text-indent: 20px !important;
+    padding-top: 1pc !important;
+  }
+  
+  @keyframes fade-in-top {
+              
+    0% {
+      transform:translateY(-50px);
+      opacity:0;
+      
+      margin-top: -20pc;
+    }
+    100% {
+      transform:translateY(0);
+      opacity:1;
+    }
+  }
+  
+  @media (max-width:600px) {
+    .adminsignimg{
+      margin-top: 4pc !important;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .adminimg{
+      height: 15pc;
+    }
+    
+    .adminsign{
+      margin-top: 2pc !important;
+     }
+     
+     .pageimg{
+      height: 2pc !important;
+      width: 2pc !important;
+    }
+  
+    .header {
+      grid-template-columns: auto auto;
+      padding: 10px 7px;
+      height: auto;
+    }
+    .signimg{
+      height: 5pc;
+    }
+    .pageimg{
+      height: 2pc !important;
+      width: 2pc !important;
+    }
+   
+    .logo img {
+      height: auto;
+      width: 70px;
+    }
+  
+    .bottonnav{
+      height: 9vh !important;
+      position: fixed;
+      bottom: 0px;
+    }
+  
+    .search {
+      grid-column: 2;
+      grid-row: 2;
+      grid-column: 1/span 2;
+      padding-top: 10px;
+    }
+  
+    .icons .fa {
+      padding: 5px;
+    }
+  }

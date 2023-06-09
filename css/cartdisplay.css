@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  .header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 25px;
+    height: 80px;
+    align-items: center;
+    background-color:#007bff ;
+  }
+  .logo{
+    font-size: 30px;
+    color: white;
+  }
+  .logo img{
+    height: 40px;
+  }
+  .search input{
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .icons{
+    text-align: right;
+  }
+  
+  .icons .fa{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    transition: 0.6s;
+  }
+  .fa:hover{
+    color: black;
+  }
+  .links{
+
+  height: 0px;
+  transition: 0.6s;
+  }
+  .links a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  
+  .container{
+   margin-top: 3pc;
+  }
+  .bi-trash3{
+    color: black;
+
+  }
+  .bi-trash3:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .dispImg{
+    background-image: url(../image/items/1\ \(7\).jpg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  
+  .show {
+    width: 2pc;
+    height: 2pc;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.containe{
+  margin-top: 7pc;
+}
+.thcolor{
+  background-color: rgb(249, 249, 203);
+  color: rgb(80, 79, 79);
+}
+.location{
+  margin-top:6pc;
+  height: 115vh;
+
+}
+.price{
+  height: 10pc;
+}
+.disp{
+  display: grid !important;
+  grid-template-columns: repeat(1,1fr) !important;
+}
+b{
+  font-size: 2pc;
+}
+.progress{
+  height: 9px !important;
+}
+select{
+  height: 3pc;
+  width: 85%;
+}
+select:hover{
+  border: 2px solid rgb(0, 153, 255);
+  height: 3pc;
+  width: 85%;
+
+}
+.dgrid{
+  display: flex;
+  justify-content: space-between !important;
+}
+.btnheight{
+  height: 3pc;
+  font-size: larger !important;
+  font-weight: 800 !important;
+}
+.carimg{
+  height: 3pc;
+}
+.delivery{
+  position: relative;
+  bottom: 3pc;
+ 
+}
+.delivery1{
+  position: relative;
+  bottom: 5pc;
+ 
+}
+.delivery2{
+  position: relative;
+  bottom: 9pc;
+  
+ 
+}
+
+.position{
+  position: relative;
+  bottom: 2pc;
+}
+
+.position1{
+  position: relative;
+  bottom: 6pc;
+}
+.selinfo{
+  height: 16pc;
+  position: relative;
+  bottom:7pc;
+}
+.subtotal{
+  position: relative;
+  bottom: 7pc;
+}
+.part{
+  height: 50vh;
+  width: 51pc;
+}
+
+.roundimg {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 20pc;
+}
+.cartImg{
+  font-size: 5pc;
+}
+.information {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fixedissue {
+  position: relative;
+  height: 90vh;
+  top: 4pc;
+ 
+}
+.detailsstore {
+  margin-top: 5pc;
+  font-family: monospace;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.reduceFont{
+  font-size: 13px !important;
+}
+i:hover {
+  color: rgb(0, 132, 255);
+}
+.authbtn:hover{
+  color: rgb(0, 132, 255) !important;
+  border: 2px solid  rgb(93, 140, 184) !important;
+}
+.bottonnav{
+  height: 9vh !important;
+  position: fixed;
+  bottom: 0px;
+}
+.pageimg{
+  height: 2pc !important;
+}
+.cartdisplay{
+  overflow-y: scroll !important;
+}
+  @media (max-width:600px) {
+    .header{
+        grid-template-columns:auto auto;
+        padding: 10px 7px;
+        height: auto;
+    }
+    .logo img{
+        height: auto;
+        width: 70px;
+    }
+    .part{
+      
+      height: 50vh !important;
+    }
+    .roundimg {
+      height: 20vh;
+      width: 20vh;
+      border-radius: 20pc;
+    }
+    .pageimg{
+      height: 2pc !important;
+      width: 2pc !important;
+    }
+    .cartImg{
+      font-size: 5pc;
+    }
+
+    .dispImg{
+      margin-top: 6pc;
+      background-image: url(https://ng.jumia.is/cms/0-1-initiatives/jumia-pay/2023/april/712x384_japy.png);
+      height: 40vh;
+      width: 10pc !important;
+      border-bottom-right-radius: 45px !important;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      animation-name: dispImg;
+      animation-iteration-count: infinite;
+      animation-timing-function: calc(40);
+      animation-duration: 5s;
+   
+    }
+    @keyframes dispImg {
+      40%{
+        background-image: url(https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/w17-Best-phone-electronic/Slider_best_hones_and_electronics.jpg);
+      }
+      60%{
+        background-image: url(https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/w17-Best-phone-electronic/Grocery/Desktop_Homepage_Slider__712x384.png);
+      }
+      100%{
+        background-image: url(https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/w17-Best-phone-electronic/Grocery/Desktop_Homepage_Slider__712x384.png);
+      }
+      
+    }
+     .allcontainer{
+    background-image: url(../image/items/orange-copy-space-background-with-sale-idea_23-2148305925.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    height: 800vh;
+  }
+  .containe{
+    border-radius:10px ;
+    box-shadow: 0 0 8px rgb(0, 115, 255);
+    margin-top: 0pc;
+    
+  
+  }
+    .search{
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+        padding-top: 10px;
+    }
+    .icons .fa{
+        padding: 5px;
+    }
+    .dgrid{
+      display: grid !important;
+      grid-template-columns:repeat(1,1fr) !important;
+    }
+    .rounded{
+      height: 7pc ;
+    }
+    .carimg{
+      height: 47px;
+    }
+    .selinfo{
+      /* top: 1px !important; */
+      height: 16pc;
+      position: relative;
+      bottom:6pc;
+    }
+    .fixedissue {
+      height: 230vh;
+        position: relative;
+        top: 28pc !important;
+       
+     
+    }
+    .diplayrid{
+      display: flex;
+      justify-content: space-between !important;
+      word-spacing: 20%;
+    }
+    
+    
+      .information {
+        height: 70vh;
+        display: grid;
+        row-gap: 1px !important;
+        column-gap: 1px !important;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .part{
+        height: 50vh;
+        width: 24pc;
+      }
+      .allhig{
+        height: 47vh !important;
+      }
+    
+      .detailsstore {
+        padding-left: 2pc;
+        margin-top: 1px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+    }
+ 
+
+  

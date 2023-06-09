@@ -1,0 +1,22 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bottonnav{
+    height: 9vh !important;
+    position: fixed;
+    bottom: 0px;
+  }
+  label{
+    font-family: monospace;
+    font-weight: 500;
+  }
+  @media (max-width:600px) {
+    .bottonnav{
+        height: 9vh !important;
+        position: fixed;
+        bottom: 0px;
+      }
+    
+  }

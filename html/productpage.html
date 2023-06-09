@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product page </title>
+  <link rel="shortcut icon"
+  href="../image/images-removebg-preview (1).png"
+  type="image/x-icon">
+  <link rel="stylesheet" href="../css/productpage.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <link rel="stylesheet" href="../bootstrap3/bootstrap-5.2.2-dist/css/bootstrap.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/3b1ca000cb.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> -->
+</head>
+
+
+<body>
+
+  <div class="scrolldiv"></div>
+  <div class="header bg-info fixed-top">
+    <div class="logo fw-bolder">
+      Doc Pay <img class="pageimg" src="../image/images-removebg-preview (1).png" alt=""></i> 
+      <a href="#"><img src="../image/" alt=""></a>
+    </div>
+    <div class="search">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-info shadow text-light" type="submit">Search</button>
+      </form>
+
+    </div>
+    <div class="icons ">
+      <a href="#" class="fa fa-heart"></a>
+      <a href="./cartdisplay.html" class="fa fa-shopping-cart position-relative">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="badge">
+        </span>
+      </a>
+     <!-- <a href="./adminpage.html" class="text-decoration-none"> <i class="bi fs-4 bi-person-circle text-light">Admin</i></a> -->
+      <a href="#" class="fa fa-user"><span id="showUser"></span></a>
+      <a href="#" class="fa fa-bars  "></a>
+    </div>
+  </div>
+  <div class="links ms-2 bg-info">
+    <a href="" class="d-block d-md-none">></a>
+    <a href="" class="d-block ">></a>
+    <a href="./productpage.html"><i class="bi bi-house-door "></i>Home</a>
+    <a href="./cartdisplay.html"><i class="bi bi-cart-check"></i>Cart</a>
+    <a href="./adminpage.html"><i class="bi bi-person-check"></i>Admin Page</a>
+    <a href="./checkout.html"><i class="bi bi-basket2"></i>Checkout page</a>
+
+  </div>
+  <div class="allcontainer col-12  bg">
+
+    <div class="container  mt-3 gap-2 ">
+      <div class=" rounded carouseldiv">
+      </div>
+      <div class=" rounded d-none d-lg-block carouseldiv1"></div>
+    </div>
+    <div class="d-flex justify-content-around mt-2">
+
+      <div class=" animateimg">
+      </div>
+      <div class=" animateimg1">
+
+      </div>
+    </div>
+    <div class="text-center  containerbtn">
+      TOP BRANDS
+      <h2 class="fw-bold"> NEW COLLECTIONS</h2>
+      <button class="btn  fs-5 signbtn  text-light mt-5 col-3 col-md-1"><a href="./signup.html" class="text-decoration-none text-light"> Sign up</a></button>
+      <button class="btn  fs-5 signbtn text-light mt-5  col-3 col-md-1"><a href="./signin.html" class="text-decoration-none text-light"> Sign in</a></button>
+    </div>
+
+    <div id="dispTitle"></div>
+     <div class="mt-5" id="dispUploadedImage"></div>
+
+    <div class="  itemdTttle bg-info">
+      <h2 class="ms-5 fs-2 fw-bold py-3 text-light"> man Cloth </h2>
+`1    <div class="itemdiv">
+      <div id="displayALLItem" class=" "></div>
+
+      <div class=" itemdTttle   bg-info">
+        <h2 class="ms-5 fs-2 fw-bold py-3 text-light">   Women Clothing </h2>
+        <div class="itemdiv">
+          <div id="displayAllWomanItem" class=""></div>
+
+          <div class=" itemdTttle  bg-info">
+            <h2 class="ms-5 fs-2 fw-bold mb-5 py-3 text-light"> Electronics Product </h2>
+            <div class="  electronicitemdiv">
+              <div id="displayForElectronics" class=""></div>
+
+            </div>
+            <div class="itemdTttle mt-4 bg-info">
+              <h2 class="ms-5 fs-2 fw-bold mt-3 mb-5 py-3 text-light"> Men & women sneakers </h2>
+              <div class="  shoeitemdiv">
+                <div id="displayForSohe" class=""></div>
+              </div>
+
+              <div class="gridimage mx-auto mt-3">
+                <div class=" displaylastimage mt-5">
+                  <div class=" mx-auto ">
+                    <img class="lastimage" src="../image/items/off.png" alt="">
+                  </div>
+                  <div class="mx-auto ">
+                    <img class="lastimage" src="../image/items/off3.png" alt="">
+                  </div>
+                </div>
+                <div class=" mx-auto">
+                  <img class=" lastimage" src="../image/items/off1.png" alt="">
+                </div>
+              </div>
+              
+              <i class="bi bi-arrow-up-circle arrow fs-1 position-relative text-info    float-end"></i>
+    
+              <div class="border fixedissue   mt-5 border-1  bg-dark">
+              <div class=" information px-4">
+                <div class="logo fw-bolder  ">
+                  Doc Pay <img class="pageimg" src="../image/images-removebg-preview (1).png" alt=""></i>
+                  <a href="#"><img src="../image/" alt=""></a>
+                </div>
+
+                <div class="text-light">
+                <b> NEW TO DOC PAY?</b> <br>
+                  Subscribe to our newsletter to get updates on our latest offers! <br>
+                  <i class="bi bi-envelope position-absolute mt-1 fs-4 text-info"></i><input class="border px-4 form-control text-dark  w-70 border-1  border-info text-light" type="text" placeholder="Enter email Address" id="dispUserEmail">
+                  <button class="border border-1 mt-1 btn border-info text-light">MALE</button>
+                  <button class="border border-1 mt-1 btn border-info text-light">FEMALE</button>
+                </div>
+                <div class="text-light">
+                 <b> DOWNLOAD DOC PAY APP FREE FOR</b> <br>
+                  Get access to executive offer! <br>
+                  <button class="border border-1 btn border-info text-light">App Store</button>
+                  <button class="border border-1 btn border-info text-light">Google Play</button>
+                </div>
+                </div>
+                <hr class="text-light">
+                <div class="detailsstore">
+                <div class="text-light">
+                <b>  LET US HELP YOU </b><br> <br>
+                  Help Center <br>
+                  Contact Us <br>
+                  How to shop on Jumia? <br>
+                  Delivery options and timelines <br>
+                  How to return a product on Jumia? <br>
+                  Corporate and bulk purchases <br>
+                  Report a Product <br>
+                  Ship your package anywhere in Nigeria <br>
+                  Dispute Resolution Policy <br>
+                  Returns and Refunds Policy <br>
+                </div>
+                <div class="text-light">
+                 <b> ABOUT JUMIA</b> <br> <br>
+                  About us <br>
+                  Jumia careers <br>
+                  Jumia Express <br>
+                  Terms and Conditions <br>
+                  Privacy Notice <br>
+                  Cookie Notice <br>
+                  Jumia Global <br>
+                  Official Stores <br>
+                  Flash Sales <br>
+                  Tech Week 2023 <br>
+                </div>
+                <div class="text-light">
+                 <b> MAKE MONEY </b><br> <br>
+                  WITH JUMIA <br>
+                  Sell on Jumia <br>
+                  Become a Sales Consultant <br>
+                  Become a Logistics Service Partner <br>
+                  Join the Jumia DA Academy <br>
+                  Join the Jumia KOL Program <br>
+                </div>
+                <div class="text-light">
+                 <b> JUMIA INTERNATIONAL<b> <br> <br>
+                  Algeria <br>
+                  Egypt <br>
+                  Ghana <br>
+                  Ivory Coast
+                  Kenya <br>
+                  Morocco <br>
+                  Senegal <br>
+                  Tunisia <br>
+                  Uganda <br>
+                </div>
+              <div class="text-light diplayrid"><b> JOIN ON </b><br>
+                  <i class="bi bi-twitter fs-4"></i> <br>
+                  <i class="bi bi-whatsapp fs-4"></i> <br>
+                  <i class="bi bi-facebook fs-4"></i> <br>
+                  <i class="bi bi-youtube fs-4"></i> <br>
+                  <i class="bi bi-instagram fs-4"></i> <br>
+                </div>
+              </div>
+               
+              </div>
+              <div class="col-12 shadow  bg-light bottonnav border   rounded-top px-5 py-1">
+                <div class="d-flex justify-content-between ">
+                  <div class="text-center text-primary">
+          
+                    <div class="bi bi-house-door"><a href="./productpage.html" class="text-decoration-none"> <br> Home</a></div> 
+                     
+                  </div>
+                  <div class="text-center  text-primary">
+          
+                    <div class="bi bi-person-circle "><a href="./adminpage.html" class="text-decoration-none"> <br> Admin</a></div> 
+                   
+                  </div>
+                  <div class="text-center  text-primary">
+          
+                    <div class="bi bi-cart3 "><a href="./productpage.html" class="text-decoration-none position-relative">
+                      <span class="position-absolute top-0 start-100 translate-middle mt-1 badge rounded-pill bg-danger" id="badg">
+                    
+                      </span>
+                      <br> Cart</a></div> 
+                 
+                  </div>
+                  <div class="text-center  text-primary">
+          
+                    <div class="bi bi-three-dots-vertical "><a href="" class="text-decoration-none"><br>  More</a></div> 
+                  
+                  </div>
+                  
+                </div>
+              </div>              
+
+              <script>
+                
+
+                document.getElementsByClassName("fa")[3].addEventListener("click", () => {
+                  document.getElementsByClassName("links")[0].classList.toggle("show")
+                })
+
+               </script>
+              <script src="../js/productpage.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product display</title>
+  <link rel="shortcut icon"
+  href="../image/images-removebg-preview (1).png"
+  type="image/x-icon">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="../css/cartdisplay.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/3b1ca000cb.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+  <div class="header bg-info fixed-top">
+    <div class="logo fw-bolder">
+      Doc Pay <img class="pageimg" src="../image/images-removebg-preview (1).png" alt=""></i>
+      <a href="#"><img src="../image/" alt=""></a>
+    </div>
+    <div class="search">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-info shadow text-light" type="submit">Search</button>
+      </form>
+
+    </div>
+    <div class="icons  ">
+      <a href="#" class="fa fa-heart"></a>
+      <a href="#" class="fa fa-shopping-cart position-relative">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="badge">
+        </span>
+      </a>
+      <!-- <a href="./adminpage.html" class="text-decoration-none "> <i class="bi fs-4 bi-person-circle text-light">Admin</i></a> -->
+      <a href="#" class="fa fa-user"><span id="showUser"></span></a>
+      <a href="#" class="fa fa-bars"></a>
+    </div>
+  </div>
+  <div class="links bg-warning d-none">
+    <a href="#">Man wear</a>
+    <a href="#">Boy Shoes</a>
+    <a href="#">Girls Shoes</a>
+    <a href="#">Woman Garment</a>
+    <a href="#">Electronics </a>
+  </div>
+  <div class="border border-1  d-block d-md-none  w-100 dispImg">
+
+  </div>
+
+  <div class="">
+    <div class=" dgrid ">
+      
+      <div class="containe shadow  col-12 bg-light col-md-8 border  d-flex ">
+        <span class="px-3 fs-5 text-danger position-absolute fw-bold showCart"></span>
+        <div style="overflow-y: scroll;height: 70pc;" class=" allhig"><div class="table table-borderless mx-auto  px-1 py-5  displaycontainer ">
+          <center>
+            <span class="  mt-5 " id="productNotFound" ></span>
+          </center>
+
+        </div>
+      </div>
+    </div>
+      <hr class="text-dark">
+      <div class="d-flex justify-content-between mt-3 px-5">
+        <div class="d-grid">
+          <div class="border bordre-1 bg-light shadow location col-12 col-md-12">
+            <h5 class="px-1 fs-bolder"> DELIVERY & RETURNS </h5>
+            <hr>
+            <div class="px-3">Doc pay </div>
+            <p class="px-3"> Free delivery on thousands of products in Lagos, Ibadan & Abuja Details</p>
+            <hr>
+            <h5 class="px-3">Choose your location</h5>
+
+            <select name="" class="fs-5 ms-4 shadow border border-none bg-light " id="">
+              <option value="">Lagos</option>
+              <option value="">Abia</option>
+              <option value="">Adamawa</option>
+              <option value="">Imo</option>
+              <option value="">Akwa ibom</option>
+              <option value="">Anambra</option>
+              <option value="">Bauchi</option>
+              <option value="">Banue</option>
+              <option value="">Bayelsa</option>
+              <option value="">Borno</option>
+              <option value="">Cross-river</option>
+              <option value="">Calaba</option>
+              <option value="">Delta</option>
+              <option value="">Eboyi</option>
+              <option value="">Edo</option>
+              <option value="">Ekiti</option>
+              <option value="">Enugu</option>
+              <option value="">Gombe</option>
+              <option value="">Federal Capital Teriritory</option>
+              <option value="">jigawa</option>
+              <option value="">Kaduna</option>
+              <option value="">Kano</option>
+              <option value="">Kebbi</option>
+              <option value="">Kogi</option>
+              <option value="">Kwara</option>
+              <option value="">Niger</option>
+              <option value="">Ogun</option>
+              <option value="">Nasarawa</option>
+              <option value="">ondo</option>
+              <option value="">Osun</option>
+              <option value="">Oyo</option>
+              <option value="">Plateau</option>
+              <option value="">River</option>
+              <option value="">Sokoto</option>
+              <option value="">Yoba</option>
+            </select>
+            <div class="d-flex py-2 gap-3 px-4">
+              <div class="border border-1 rounded  col-2 carimg"><i class="bi bi-truck fs-1 mx-auto ms-2"></i></div>
+              <div class=" ">
+                <span class="d-flex justify-content-between">
+                  <p class="fs-5 mt-2"> Door Delivery
+                  </p>
+              </div>
+              <small class="text-primary ms-5 px-3 fs-5 mt-2"> Details </small></span>
+            </div>
+            <br>
+            <p class="ms-5 px-5 py-1 delivery">
+              Delivery ₦ 52 <br>
+              Ready for delivery between 14 April & 15 April when you order within next 19hrs 10mins</p>
+            <div class="position">
+
+              <div class="d-flex py-2 gap-3 px-4 position">
+                <div class="border border-1 rounded  col-2 carimg"><i class="bi bi-diagram-2 fs-1 mx-auto ms-2"></i>
+                </div>
+                <div class="">
+                  <span class="d-flex justify-content-between">
+                    <p class="fs-5 mt-2"> Pickup Station
+
+
+                    </p>
+                </div>
+                <small class="text-primary ms-5 px-3 fs-5 mt-2"> Details </small></span>
+              </div>
+              <br>
+
+              <p class="ms-5 px-5 py-1 delivery1">
+
+                Delivery ₦ 210 <br>
+                Arriving at pickup station between 14 April & 15 April when you order within next 19hrs 7mins
+              </p>
+            </div>
+
+            <div class="position">
+
+              <div class="d-flex py-2 gap-3 px-4 position1">
+                <div class="border border-1 rounded  col-2 carimg"><i
+                    class="bi bi-bootstrap-reboot fs-1 mx-auto ms-2"></i></div>
+                <div class="">
+                  <span class="d-flex justify-content-between">
+                    <p class="fs-5 mt-2"> Return Policy</p>
+                </div>
+              </div>
+              <br>
+              <p class="ms-5 px-5 py-1 delivery2">
+                Free return within 15 days for Official Store items and 7 days for other eligible items.See more
+              </p>
+
+              <div class="fixedproduct">
+              
+              <div class=" ">
+                <div class="border border-1 shadow rounded  bg-light px-2 fw-bolder selinfo">
+                  <h5 class="d-flex justify-content-between py-1">SELLER INFORMATION <i
+                      class="bi bi-chevron-right fw-bold"></i> </h5>
+                  <hr>
+                  <h5>Yoo to-CODx</h5>
+                  <div class="d-flex justify-content-between ">
+                    86%Seller Score <br>
+                    2109 Followers
+                    <button class="btn btn-info col-3 text-light">Follow</button>
+                  </div>
+                  <h5 class="d-flex gap-2 mt-3 fw-bold"> Seller Performance <i
+                      class="bi bi-exclamation-circle fw-bold"></i></h5>
+                  <i class="bi bi-minecart-loaded  border border-1 rounded bg-light text-success"></i> Order Fulfillment
+                  Rate: Excellent <br>
+
+                  <i class="bi bi-minecart-loaded  border border-1 rounded bg-light text-success"></i> Quality Score:
+                  Excellent <br>
+                  <i class="bi bi-minecart-loaded  border border-1 rounded bg-light text-success"></i> Customer Rating:
+                  Excellent
+                </div>
+              </div>
+              <div class="d-grid border border-1 bg-light shadow subtotal mt-1">
+                <h5 class="mt-1 fw-bold px-3  ">CART SUMMARY</h5>
+                <hr>
+                <div class="">
+                  <div class="d-grid ">
+                    <div class="d-flex justify-content-between">
+
+                      <span class=" fs-5 fw-bold px-3  ">Subtotal:</span>
+                      <span id="totalprice" class="fw-bolder fs-4 text-danger  px-3 ">₦00.000</span>
+                    </div> <br>
+                    <hr>
+                    <h6 class="px-3"> Delivery fees not included yet </h6>
+                  </div>
+                </div>
+             <div id="fiex"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+  </div>
+  <div class="border fixedissue  border-1  bg-dark">
+    <div class=" information px-4">
+      <div class="logo fw-bolder  text-light fs-2">
+        Doc Pay <img class="pageimg" src="../image/images-removebg-preview (1).png" alt=""></i>
+        <a href="#"><img src="../image/" alt=""></a>
+      </div>
+
+      <div class="text-light">
+      <b> NEW TO DOC PAY?</b> <br>
+        Subscribe to our newsletter to get updates on our latest offers! <br>
+        <i class="bi bi-envelope position-absolute mt-1 fs-4 text-info"></i><input class="border px-4 form-control text-dark  w-70 border-1  border-info text-light" id="dispUserEmail" type="text" placeholder="Enter email Address">
+        <div>
+
+            <button class="border border-1 mt-1 btn border-info text-light">MALE</button>
+            <button class="border border-1 mt-1 btn border-info text-light">FEMALE</button>
+        </div>
+      </div>
+      <div class="text-light">
+       <span class="fs-5 fw-bold"> DOWNLOAD DOC PAY APP FREE FOR</span> <br>
+        Get access to executive offer! <br>
+        <button class="border border-1 btn border-info text-light authbtn">App Store</button>
+        <button class="border border-1 btn border-info text-light authbtn">Google Play</button>
+      </div>
+      </div>
+      <hr class="text-light">
+      <div class="detailsstore">
+      <div class="text-light">
+      <span class="fs-5 fw-bold">  LET US HELP YOU </span><br> <br>
+        Help Center <br>
+        Contact Us <br>
+        How to shop on Jumia? <br>
+        Delivery options and timelines <br>
+        How to return a product on Jumia? <br>
+        Corporate and bulk purchases <br>
+        Report a Product <br>
+        Ship your package anywhere in Nigeria <br>
+        Dispute Resolution Policy <br>
+        Returns and Refunds Policy <br>
+      </div>
+      <div class="text-light">
+       <span class="fs-5 fw-bold"> ABOUT JUMIA</span> <br> <br>
+        About us <br>
+        Jumia careers <br>
+        Jumia Express <br>
+        Terms and Conditions <br>
+        Privacy Notice <br>
+        Cookie Notice <br>
+        Jumia Global <br>
+        Official Stores <br>
+        Flash Sales <br>
+        Tech Week 2023 <br>
+      </div>
+      <div class="text-light">
+       <span class="fs-5 fw-bold"> MAKE MONEY </span><br> <br>
+        WITH JUMIA <br>
+        Sell on Jumia <br>
+        Become a Sales Consultant <br>
+        Become a Logistics Service Partner <br>
+        Join the Jumia DA Academy <br>
+        Join the Jumia KOL Program <br>
+      </div>
+      <div class="text-light">
+       <span  class="fs-5 fw-bold"> JUMIA INTERNATIONAL<p> <br> <br>
+        Algeria <br>
+        Egypt <br>
+        Ghana <br>
+        Ivory Coast
+        Kenya <br>
+        Morocco <br>
+        Senegal <br>
+        Tunisia <br>
+        Uganda <br>
+      </div>
+    <div class="text-light diplayrid"><span class="fs-5 fw-bold"> JOIN ON </span><br>
+        <i class="bi bi-twitter fs-4"></i> <br>
+        <i class="bi bi-whatsapp fs-4"></i> <br>
+        <i class="bi bi-facebook fs-4"></i> <br>
+        <i class="bi bi-youtube fs-4"></i> <br>
+        <i class="bi bi-instagram fs-4"></i> <br>
+      </div>
+    </div>
+
+
+    <div class="col-12 shadow  bg-light bottonnav border   rounded-top px-5 py-1">
+      <div class="d-flex justify-content-between ">
+        <div class="text-center text-primary">
+
+          <a href="./productpage.html" class="text-decoration-none bi bi-house-door fs-"> <br> Home</a>
+           
+        </div>
+        <div class="text-center  text-primary">
+
+        <a href="./adminpage.html" class="text-decoration-none bi bi-person-circle fs-"> <br> Admin</a> 
+         
+        </div>
+        <div class="text-center  text-primary">
+
+          <a href="./cartdisplay.html" class="text-decoration-none position-relative fs- bi bi-cart3">
+            <span class="position-absolute top-0 start-100 translate-middle mt-1 badge rounded-pill bg-danger" id="badg">
+          
+            </span>
+            <br> Cart</a> 
+       
+        </div>
+        <div class="text-center  text-primary">
+
+          <a href="" class="text-decoration-none bi bi-three-dots-vertical fs- "><br>  More</a>
+        
+        </div>
+        
+      </div>
+    </div>              
+
+    <script src="../js/cartdisplay.js"></script>
+    
+</body>
+
+</html>
+
+
+
+
+<!-- const paymentForm = document.getElementById('paymentForm');
+paymentForm.addEventListener("submit", payWithPaystack, false);
+function payWithPaystack(e) {
+  e.preventDefault();
+
+  let handler = PaystackPop.setup({
+    key: 'pk_test_xxxxxxxxxx', // Replace with your public key
+    email: document.getElementById("email-address").value,
+    amount: document.getElementById("amount").value * 100,
+    ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+    // label: "Optional string that replaces customer email"
+    onClose: function(){
+      alert('Window closed.');
+    },
+    callback: function(response){
+      let message = 'Payment complete! Reference: ' + response.reference;
+      alert(message);
+    }
+  });
+
+  handler.openIframe();
+} -->
+
+<!-- <form id="paymentForm">
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email-address" required />
+  </div>
+  <div class="form-group">
+    <label for="amount">Amount</label>
+    <input type="tel" id="amount" required />
+  </div>
+  <div class="form-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" />
+  </div>
+  <div class="form-group">
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" />
+  </div>
+  <div class="form-submit">
+    <button type="submit" onclick="payWithPaystack()"> Pay </button>
+  </div>
+</form>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>  -->
